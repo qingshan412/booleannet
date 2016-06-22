@@ -25,9 +25,9 @@ model.iterate( fullt=7, steps=150 )
 #
 # generate the plot
 #
-p1 = pylab.plot( model.data["B"] , 'ob-' )
-p2 = pylab.plot( model.data["C"] , 'sr-' )
-p3 = pylab.plot( model.data["D"] , '^g-' )
+p1, = pylab.plot( model.data["B"] , 'ob-' )
+p2, = pylab.plot( model.data["C"] , 'sr-' )
+p3, = pylab.plot( model.data["D"] , '^g-' )
 pylab.legend( [p1,p2,p3], ["B","C","D"])
 
 pylab.show()  
