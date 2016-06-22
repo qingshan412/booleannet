@@ -39,8 +39,8 @@ print model.detect_cycles()
 # this is how one plots the values, delete this below
 # if matplotlib is not installed
 #
-p1 = pylab.plot( model.data["B"] , 'ob-' )
-p2 = pylab.plot( model.data["C"] , 'sr-' )
+p1, = pylab.plot( model.data["B"] , 'ob-' )
+p2, = pylab.plot( model.data["C"] , 'sr-' )
 pylab.legend( [p1,p2], ["B","C"])
 pylab.ylim((-0.1,1.1))
 pylab.show()    
