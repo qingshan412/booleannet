@@ -61,9 +61,9 @@ valueD = avgs["D"]
 #
 # plot the state of the nodes
 #
-p1 = pylab.plot( valueB , 'ob-' )
-p2 = pylab.plot( valueC , 'sr-' )
-p3 = pylab.plot( valueD , '^g-' )
+p1, = pylab.plot( valueB , 'ob-' )
+p2, = pylab.plot( valueC , 'sr-' )
+p3, = pylab.plot( valueD , '^g-' )
 pylab.legend( [p1,p2,p3], ["B","C","D"])
 
 pylab.show()  
